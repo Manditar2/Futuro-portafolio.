@@ -1,0 +1,33 @@
+.App {
+  position: relative;
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+
+.tablero{
+  height:300px;
+  width:300px;
+  display: flex;
+  flex-wrap: wrap;
+  
+}
+.casilla{
+  height: 100px;
+  box-sizing: border-box;
+  border-color: #8b008b;
+  border: 15px solid black;
+  border-radius: 12px;
+  width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #000000;
+  color: #ffff;
+}
