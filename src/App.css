@@ -1,33 +1,189 @@
 .App {
-  position: relative;
+  position: static;
   display: flex;
+  flex-direction: row;
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  border: 0;
+  max-width: 100%;
+  max-height: 100%;
+  padding:0;
+  margin-left:auto;
+  margin-right:auto;
+  background-color: #fdfefe;
+
+}
+.contiene_tablero{
   height: 100%;
   width: 100%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-
 .tablero{
   height:300px;
   width:300px;
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   
 }
 .casilla{
   height: 100px;
   box-sizing: border-box;
-  border-color: #8b008b;
-  border: 15px solid black;
   border-radius: 12px;
   width: 100px;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #000000;
-  color: #ffff;
+}
+.titulo{
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 32px;
+  display: flex;
+  justify-content: center;
+  padding:4%;
+  font-weight: 900;
+
+}
+.link{
+  text-decoration: none;
+  color:rgb(247, 247, 248);
+  display: block;
+  max-width: 90%;
+  padding: 10px;
+  border-radius: 2px;
+  transition: all 0.5s;
+}
+.link:hover{
+  background-color:rgb(53, 56, 60);
+}
+.div_login{
+  display:flex;
+  justify-content: flex-start;
+
+}
+.fila{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  border: 0;
+  padding:0;
+}
+.columna_side{
+  width: 300px;
+  min-width: 300px;
+  height: 100%;
+  margin: 0;
+  border: 0;
+  padding:0;
+}
+
+.columna_lado{
+  height: 100%;
+  display: flex;
+  width: 100%;
+}
+.columna_lado1{
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  flex-direction: column;
+}
+.columna_lado2{
+  width: 10%;
+}
+.button_login{
+  display: inline-block;
+  border-radius: 18px;
+  font-weight: 900;
+  background-color:#47d6c0;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 10px;
+  width: 90px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+  opacity: 0.8;
+  margin-top: 20px;
+}
+.button_login:hover{
+  opacity: 1;
+}
+.login_icon{
+  margin-left: 0;
+  padding: 0;
+  margin-right: 9px;
+}
+
+.contenedor_login{
+  display: flex;
+  height: 80%;
+  width: 80%;
+  margin-top: 5%;
+  box-shadow: 12px 12px 20px 2px rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+}
+
+.contenedor_login_izquierdo{
+background: rgb(71,214,192);
+background: linear-gradient(138deg, rgba(71,214,192,1) 0%, rgba(40,177,178,1) 100%);
+height: 100%;
+width: 50%;
+display: flex;
+flex: 1 1;
+flex-direction: column;
+color:#FFFFFF;
+font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+monospace;
+}
+.imagen_login{
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  background: url(C:\Users\gcas_\Desktop\2048\2048_aplicacion\src\wea.jpg);
+  background-position: 50% 50%;
+  background-size: cover;
+
+}
+
+.login_boton_enviar{
+  background-color: #008bde;
+  margin-top: 6%;
+  width: 60%;
+  margin-left: 20%;
+  font-weight: 900;
+  color:#ffff;
+  border-radius: 40px;
+  border:'none';
+  height: 15%;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+.login_boton_enviar:hover{
+  background-color: #002a6d;
+  width: 62%;
+  height: 17%;
+}
+
+.login_boton_enviar_registro{
+  background-color: #008bde;
+  font-weight: 900;
+  height: 43px;
+  padding: 10px;
+  color:#ffff;
+  border-radius: 40px;
+  border:'none';
+  transition: all 0.5s;
+  cursor: pointer;
+}
+.login_boton_enviar_registro:hover{
+  background-color: #002a6d;
+  height: 45px;
 }
