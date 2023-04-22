@@ -1,3 +1,6 @@
+#De momento solo tiene frontend y un juego implementado en el cliente, el 2048.
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
